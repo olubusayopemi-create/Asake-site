@@ -58,9 +58,9 @@ It feels like a *defining project*  the kind that decides if an artist:
 - becomes a movement 
 - or matures into a legacy  
 
-Asake has already achieved every milestone expected of a star — hit records, sold-out shows, cultural relevance, and global recognition.
+Asake has already achieved every milestone expected of a star, like hit records, sold-out shows, cultural relevance, and global recognition.
 
-What comes next is *authorship* — not just music, but message.
+What comes next is *authorship,* not just music, but message.
 
 ---
 
