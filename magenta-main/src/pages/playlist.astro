@@ -1,0 +1,96 @@
+---
+import BaseLayout from './layouts/BaseLayout.astro';
+---
+<BaseLayout pageTitle="Asake Playlist">
+
+  <section class="playlist-layout">
+    
+    <div class="playlist-list">
+      <h2>Top Tracks</h2>
+
+      <button id="shuffleBtn" class="btn btn-primary" style="margin-bottom:10px;">
+        🔀 Shuffle order
+      </button>
+
+      <ul id="playlist" style="list-style: none; padding: 0; margin: 0;">
+        
+      </ul>
+    </div>
+
+    <div class="playlist-form">
+      <h3>Add a song</h3>
+      <p style="color: var(--text-muted); font-size: 0.9rem;">
+        Type any Asake song or collab that you like and add it to the list.
+      </p>
+
+      <form id="addSongForm">
+        <input
+          type="text"
+          id="songInput"
+          placeholder="Enter song title…"
+          style="width: 100%; padding: 8px; margin-bottom: 10px; border-radius: 8px; border: 1px solid var(--accent-soft); background:#021618; color:#fff;"
+          required
+        />
+        <button
+          type="submit"
+          class="btn btn-outline"
+          style="width: 100%; text-align:center;"
+        >
+          Add to playlist
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    let songs = [
+      "Lonely at the Top",
+      "Sungba",
+      "Amapiano (feat. Olamide)",
+      "Peace Be Unto You (PBUY)",
+      "Terminator",
+      "2:30",
+      "Yoga",
+      "Organise",
+      "Sunshine",
+      "Introduction",
+    ];
+
+    
+    const list = document.getElementById("playlist");
+    const btn = document.getElementById("shuffleBtn");
+    const form = document.getElementById("addSongForm");
+    const input = document.getElementById("songInput");
+
+    function render() {
+      list.innerHTML = "";
+      songs.forEach((song) => {
+        const li = document.createElement("li");
+        li.textContent = "🎵 " + song;
+        li.style.padding = "6px 0";
+        li.style.borderBottom = "1px solid #0b3a3a";
+        list.appendChild(li);
+      });
+    }
+
+    function shuffle() {
+      songs.sort(() => Math.random() - 0.5);
+      render();
+    }
+
+    function addSong(event) {
+      event.preventDefault();
+      const value = input.value.trim();
+      if (value) {
+        songs.push(value);
+        input.value = "";
+        render();
+      }
+    }
+
+    btn.addEventListener("click", shuffle);
+    form.addEventListener("submit", addSong);
+
+    render();
+  </script>
+</BaseLayout>
