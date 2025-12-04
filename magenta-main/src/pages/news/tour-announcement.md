@@ -1,5 +1,5 @@
 ---
-layout: ../layouts/Baselayout.astro
+layout: ../layouts/BaseLayout.astro
 title: "Tour Annoucement"
 description: "Updates on Asake upcoming tour, dates, cities and performance."
 image: "/news-tour.jpg"
