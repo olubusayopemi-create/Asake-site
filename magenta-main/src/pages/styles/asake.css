@@ -316,7 +316,7 @@
   }
 
   nav {
-    padding: 0.5rem o.7rem;
+    padding: 0.4rem o.5rem;
   }
 
   nav ul {
@@ -324,12 +324,14 @@
     flex-wrap: nowrap;        
     justify-content: space-between;
     align-items: center;
-    gap: 0.35rem;
+    gap: 0.4rem;
   }
 
   nav a {
-    font-size: 0.8rem;
-    letter-spacing: 0.9em;
+    font-size: 0.78rem;
+    letter-spacing: 0.09em;
+    margin-right: 0;
+    white-space: nowrap;
   }
 
   .intro {
