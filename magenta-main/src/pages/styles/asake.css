@@ -316,21 +316,22 @@
   }
 
   nav {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem o.7rem;
   }
 
   nav ul {
+    display: flex;
     flex-wrap: nowrap;        
-    justify-content: center;
-    gap: 0.5rem;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.35rem;
   }
 
   nav a {
-    font-size: 0.9rem;
-    letter-spacing: 0.1em;
-    white-space: nowrap;        
+    font-size: 0.8rem;
+    letter-spacing: 0.9em;
+  }
 
-  
   .intro {
     flex-direction: column;     
     align-items: center;
@@ -358,6 +359,7 @@
 
   .about-layout {
     flex-direction: column;
+    align-items: center;
   }
 
   .about-text {
@@ -366,13 +368,14 @@
 
   .about-image {
     order: 1;
+    margin-bottom: 1.5rem;
   }
 
   .about-image img {
     width: 100%;
     height: auto;
+    max-height: 380px;
     object-fit: cover;
-    max-height: 420px;
   }
 
   .blog-grid {
@@ -400,5 +403,4 @@
     align-items: center;
     gap: 1.5rem;
   }
-}
 }
