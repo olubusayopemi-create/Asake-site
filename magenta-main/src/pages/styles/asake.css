@@ -31,8 +31,6 @@
         z-index: 9999;
         background: #000000;
         padding: 20px 18px;
-        border-radius: 999px;
-        border: 1px solid var(--accent-soft);
         margin-bottom: 40px;
         margin-top: 0;
         
@@ -42,7 +40,7 @@
         color: teal;
         text-decoration: none;
         margin-right: 18px;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         text-transform: uppercase;
         letter-spacing: 0.15em;
       }
@@ -360,22 +358,21 @@
 
   .about-layout {
     flex-direction: column;
-    min-height: auto;
-    gap: 1.5rem;
   }
 
   .about-text {
-    text-align: left;
+    margin-top: 16px;
   }
 
   .about-image {
-    text-align: center;
+    order: 1;
   }
 
   .about-image img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    max-height: 420px;
   }
 
   .blog-grid {
